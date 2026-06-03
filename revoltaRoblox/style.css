@@ -289,7 +289,7 @@ ul li a {
   margin-bottom: 25px;
 }
 
-.banner-cta {
+.button-header {
   display: inline-block;
   background-color: #FFFFFF;
   color: #B32626;
@@ -297,18 +297,27 @@ ul li a {
   font-weight: bold;
   font-size: 16px;
   border-radius: 30px;
-  text-decoration: none;
+  border-color: transparent;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
 }
 
-.banner-cta:hover {
+.button-header a {
+    color: #B32626;
+    text-decoration: none;
+}
+
+.button-header:hover {
   transform: translateY(-5px);
   background-color: transparent;
   color: var(--cor-bordas);
   border: 2px solid var(--cor-bordas);
 }
+
+.button-header:hover a {
+    color: var(--cor-bordas);
+}
+
 
 .banner-imagens {
   flex: 1;
@@ -497,15 +506,15 @@ ul li a {
 /*Footer - Home*/
 
 .footer {
-    background-color: var(--cor-principal);
     color: var(--cor-fundo);
     text-align: center;
-    padding: 20px 0;
 }
 
 .container-footer {
+    background-color: var(--cor-principal);
     max-width: 100%;
-    margin: 0 auto;
+    max-height: 100%;
+    margin: 0;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -517,12 +526,18 @@ ul li a {
     width: 300px;
     background-color: white;
     color: #4b4848;
+    margin-top: 2rem;
     border: none;
     padding: 5px 20px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
+}
+
+.button-footer a {
+    color: #4b4848;
+    text-decoration: none;
 }
 
 .button-footer:hover {
@@ -558,5 +573,24 @@ ul li a {
     color:#dfd5d5 ;
     text-decoration: none;
     font-size: 15px;
+}
+
+.finaly-footer {
+    width: 100%;
+
+    background-color: var(--cor-secundaria);
+    font-size: 14px;
+    color: #dfd5d5;
+    padding: 20px 0;
+}
+
+.finaly-footer p {
+    margin: 5px 0;
+}
+
+.finaly-footer a {
+    color: #dfd5d5;
+    text-decoration: none;
+    margin: 0 5px;
 }
     
