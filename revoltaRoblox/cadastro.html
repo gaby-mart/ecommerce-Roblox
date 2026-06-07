@@ -23,17 +23,58 @@
                     <img src="./img/imgFooter.png" t="Logo escrito da empresa Roblotion com letras vermelhas semelhante as do roblox" class="logo-login" width="200px" style="margin-bottom: 1rem;">
                 </div>
                 <div class="text-login">
-                    <h2>Bem-vindo de Volta!</h2>
-                    <p>Faça Login ou crie uma conta para se juntar a revolução!</p>
+                    <h2>Você Foi Convocado</h2>
+                    <p>Cadastre seus dados para fazer parte da revolução.</p>
                 </div>
                 <div class="container-form-login">
                     <form class="form-login">
                         <div class="label1">
-                            <label for="inputLogin" class="label-login">Email:</label>
+                            <label for="inputCadastro" class="label-login">Nome:</label>
+                            <input type="text" id="input-email" class="input-form" placeholder="Insira seu primeiro nome.">
+                        </div>
+                         <div class="label2">
+                            <label for="inputCadastro" class="label-login">Sobrenome:</label>
+                            <input type="number" id="input-form" class="input-form" placeholder="Insira seu segundo nome.">
+                        </div>
+                        <div class="label2">
+                            <label for="inputCadastro" class="label-login">CPF:</label>
+                            <input type="number" id="input-form" class="input-form" placeholder="Insira seu n° de CPF.">
+                        </div>
+                        <div class="label1">
+                            <label for="inputCadastro" class="label-login">Email:</label>
                             <input type="text" id="input-email" class="input-form" placeholder="Insira seu e-mail.">
                         </div>
                         <div class="label2">
-                            <label for="inputLogin" class="label-login">Senha:</label>
+                            <label for="inputCadastro" class="label-login">Telefone:</label>
+                            <input type="number" id="input-form" class="input-form" placeholder="Insira seu n° de telefone.">
+                        </div>
+                        <div class="campo-genero">
+                            <label>Gênero:</label>
+
+                            <div class="opcoes-genero">
+                                <label>
+                                    <input type="radio" name="genero" value="masculino">
+                                    Masculino
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="genero" value="feminino">
+                                    Feminino
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="genero" value="outro">
+                                    Outro
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="genero" value="nao_informar">
+                                    Prefiro não informar
+                                </label>
+                            </div>
+                        </div>
+                        <div class="label2">
+                            <label for="inputCadastro" class="label-login">Senha:</label>
                             <input type="text" id="input-form" class="input-form" placeholder="Insira sua senha.">
                         </div>
                         <button class="button-form">
@@ -44,7 +85,7 @@
                         <p>Ao continuar, você concorda com as Condições de Uso e a Notificação de privacidade da Roblotion.</p>
                     </div>
                      <div class="text-login">
-                    <p><a href="cadastro.html">Não possui uma conta? Cadastra-se já!</a></p>
+                    <p><a href="login.html">Já possui uma conta? Faça login já!</a></p>
                 </div>
                 </div>
             </article>

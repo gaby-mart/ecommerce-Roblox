@@ -665,6 +665,11 @@ body {
     font-size: 15px;
 }
 
+.text-login p a{
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
 /* Formulário */
 
 .form-login {
@@ -674,13 +679,11 @@ body {
 
 .label1,
 .label2 {
+    margin-top: 0.75rem;
     display: flex;
     flex-direction: column;
 }
 
-.label2 {
-    margin-top: 0.75rem;
-}
 
 .label-login {
     margin-bottom: 0.25rem;
@@ -693,6 +696,34 @@ body {
     border: 1px solid #979191;
     border-radius: 5px;
     padding: 0 10px;
+}
+
+.campo-genero {
+    margin: 20px 0;
+}
+
+.campo-genero label {
+    color: var(--cor-principal);
+    font-size: 16px;
+}
+
+.opcoes-genero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.opcoes-genero label {
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcoes-genero input[type="radio"] {
+    width: 16px;
+    height: 16px;
 }
 
 /* Botão */
