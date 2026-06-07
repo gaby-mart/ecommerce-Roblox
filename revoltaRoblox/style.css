@@ -737,6 +737,8 @@ body {
     background-color: var(--cor-principal);
     cursor: pointer;
     transition: .2s;
+    color: #fff;
+     font-weight: bold;
 }
 
 .button-form a {
@@ -749,6 +751,7 @@ body {
     transform: translateY(-2px);
     background-color: transparent;
     border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
 }
 
 .button-form:hover a {
