@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Revolução Robloxiana</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">
+            <img src="./img/logo.png" alt="Logo" class="logoImg">
+        </a>
+
+        <form class="conteinerPesquisa">
+            <input type="text" id="inputPesquisar" placeholder=" Algo em mente?">
+            <button type="submit" class="buttonPesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div class="buttonsHeader">
+            <button class="buttonsMenu">
+                <a href="card.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </button>
+
+            <button class="buttonsMenu">
+                <a href="login.html">Login</a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="categoriaMenu">
+        <ul class="listMenu">
+            <li><a href="index.html">Todos</a></li>
+            <li><a href="#">Venda na Roblotion</a></li>
+            <li><a href="#">Mais Vendidos</a></li>
+            <li><a href="#">Oferta do Dia</a></li>
+            <li><a href="#">Disponíveis em Todo Roblox</a></li>
+            <li><a href="#">Seja um Revolucionário</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-carrinho">
+    <section class="container-carrinho">
+
+        <div class="lista-produtos-carrinho">
+
+            <h1 class="titulo-carrinho">Meu Carrinho</h1>
+
+            <div class="produto-carrinho">
+
+                <img height="100px" src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg" alt="Produto" class="imagem-produto-carrinho">
+
+                <div class="info-produto-carrinho">
+                    <h2>Placa de Protesto Oficial</h2>
+                    <p>Produto exclusivo Revolução Robloxiana</p>
+
+                    <div class="quantidade-container">
+                        <button class="btn-quantidade">-</button>
+                        <span>1</span>
+                        <button class="btn-quantidade">+</button>
+                    </div>
+                </div>
+
+                <div class="preco-produto-carrinho">
+                    <span>R$ 49,90</span>
+
+                    <button class="btn-remover">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="produto-carrinho">
+
+                <img src="data:image/jpeg;base64,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" alt="Produto" class="imagem-produto-carrinho">
+
+                <div class="info-produto-carrinho">
+                    <h2>Kit Manifestação Roblox</h2>
+                    <p>Edição limitada</p>
+
+                    <div class="quantidade-container">
+                        <button class="btn-quantidade">-</button>
+                        <span>2</span>
+                        <button class="btn-quantidade">+</button>
+                    </div>
+                </div>
+
+                <div class="preco-produto-carrinho">
+                    <span>R$ 79,90</span>
+
+                    <button class="btn-remover">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <aside class="resumo-pedido">
+
+            <h2>Resumo do Pedido</h2>
+
+            <div class="linha-resumo">
+                <span>Subtotal</span>
+                <span>R$ 209,70</span>
+            </div>
+
+            <div class="linha-resumo">
+                <span>Frete</span>
+                <span>R$ 15,00</span>
+            </div>
+
+            <div class="linha-resumo total">
+                <span>Total</span>
+                <span>R$ 224,70</span>
+            </div>
+
+            <button class="btn-finalizar">
+                Finalizar Compra
+            </button>
+
+        </aside>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="container-footer">
+        <div class="header-footer">
+            <button class="button-footer"><a href="#top">Voltar ao topo</a></button>
+        </div>
+        <div class="content-footer">
+            <div class="content-footer-item">
+                <h3>Conheça a Roblotion</h3>
+                <div class="list-footer">
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Informações Coorporativas</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">Chat para Clientes</a></li>
+                        <li><a href="#">Planejamentos anuais</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-footer-item">
+                <h3>Nossa Causa</h3>
+                <div class="list-footer">
+                    <ul>
+                        <li><a href="#">Revolução Robloxiana</a></li>
+                        <li><a href="#">Nossos Líderes</a></li>
+                        <li><a href="#">Patrocinadores</a></li>
+                        <li><a href="#">Próximos Eventos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-footer-item">
+                <h3>Venha Fazer Parte</h3>
+                <div class="list-footer">
+                    <ul>
+                        <li><a href="#">Seja um Revolucionário</a></li>
+                        <li><a href="#">Cadastre-se</a></li>
+                        <li><a href="#">Apoio e causa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="logo-footer">
+            <img src="./img/imgFooter.png" alt="Logo escrito da empresa Roblotion com letras vermelhas semelhante as do roblox" class="logo-footer-img" width="200px" style="margin-bottom: 1rem;">
+        </div>
+    </section>
+    <section class="container-finaly-footer">
+        <div class="finaly-footer">
+                <p><a href="#">Condições de  uso |</a> <a href="#">Notificações de Privacidade |</a> <a href="#">Cookies |</a> <a href="#">Anuncios Baseados em Preferencia</a></p>
+                <p>© 2026 - Roblotion |Todos os direitos Reservados</p>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
