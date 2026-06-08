@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento-Pix-Roblotion</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<body>
+    <main class="main-login">
+        <section class="container-card-login">
+            <div class="card-pay-pix">
+                <h1>Pagamento Via Pix Online</h1>
+                <p>Não saia desta tela até o pagamento ser completado.</p>
+
+                 <div class="checkout-steps">
+
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Informações Entrega</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step  active">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Pagamento</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Confirmação</span>
+                </div>
+
+            </div>
+
+                <div class="qrCode-pix">
+                <img src="../img/qrCode-pix.png" class="img-pix">
+                </div>
+
+                <div class="client-pix-acces">
+                    <div class="container-pix-code">
+                        <span id="pix-payload" class="pix-code">00020126510014BR.GOV.BCB.PIX0129martins07.gabrielly@gmail.com5204000053039865802BR5901N6001C62070503***630440E</span>
+                    </div>
+
+                    <button id="btn-copy" onclick="copyPix()"><i class="bi bi-copy"></i></button>
+                </div>
+                <h3>Valor Transação: R$0,00</h3>
+
+                <a class="link-pay" href="../pages/pagCompleto.html"><p>Pagamento completado <i class="bi bi-arrow-right"></i></p></a>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer-login">
+    <section class="container-finaly-footer">
+        <div class="finaly-footer">
+                <p><a href="#">Condições de  uso |</a> <a href="#">Notificações de Privacidade |</a> <a href="#">Cookies |</a> <a href="#">Anuncios Baseados em Preferencia</a></p>
+                <p>© 2026 - Roblotion |Todos os direitos Reservados</p>
+        </div>
+    </section>
+</footer>
+    <script src="../js/copyPix.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

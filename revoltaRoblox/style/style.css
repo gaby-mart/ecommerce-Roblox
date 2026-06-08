@@ -1164,3 +1164,54 @@ body {
 .link-pay:hover{
     text-decoration: underline;
 }
+
+/*Pagamento Pix */
+.card-pay-pix{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-pay-pix h1{
+    color: #302e2e;
+    font-weight: bold;
+}
+
+.card-pay-pix p{
+    color: var(--cor-principal);
+    font-size: 18px;
+}
+
+.client-pix-acces{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-pix-code {
+    width: 100%;            
+    max-width: 300px;     
+    overflow: hidden;       
+}
+
+.pix-code {
+    display: block;          
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+    font-family: monospace;  
+}
+
+#btn-copy{
+    padding: 5px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-principal);
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.qrCode-pix{
+    margin-top: 1rem;
+}
