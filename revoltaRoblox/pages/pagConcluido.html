@@ -16,13 +16,8 @@
 </head>
 </head>
 <body>
-    <main class="main-login">
-        <section class="container-card-login">
-            <div class="card-pay-pix">
-                <h1>Pagamento Via Pix Online</h1>
-                <p>Não saia desta tela até o pagamento ser completado.</p>
-
-                 <div class="checkout-steps">
+    <main class="main-steps">
+        <div class="checkout-steps">
 
                 <div class="step">
                     <span class="step-number">1</span>
@@ -31,34 +26,51 @@
 
                 <div class="line"></div>
 
-                <div class="step  active">
+                <div class="step">
                     <span class="step-number">2</span>
                     <span class="step-text">Pagamento</span>
                 </div>
 
                 <div class="line"></div>
 
-                <div class="step">
+                <div class="step active">
                     <span class="step-number">3</span>
                     <span class="step-text">Confirmação</span>
                 </div>
 
             </div>
+        <section class="container-card-login">
+            <div class="container-pay-complete">
+                <div class="circle-pay red-circle"><i class="bi bi-check-lg"></i></div>
 
-                <div class="qrCode-pix">
-                <img src="../img/qrCode-pix.png" class="img-pix">
-                </div>
 
-                <div class="client-pix-acces">
-                    <div class="container-pix-code">
-                        <span id="pix-payload" class="pix-code">00020126510014BR.GOV.BCB.PIX0129martins07.gabrielly@gmail.com5204000053039865802BR5901N6001C62070503***630440E</span>
+                <h1>Pagamento Realizado Com Sucesso</h1>
+                <p>Por favor, verifique a disponibilidade do produto em sua conta no Roblox.</p>
+
+            
+                <div class="container-informacao-compra">
+                    <div class="informacao">
+                        <p>N° Compra:</p>
+                        <p>0000000</p>
                     </div>
 
-                    <button id="btn-copy" onclick="copyPix()"><i class="bi bi-copy"></i></button>
-                </div>
-                <h3>Valor Transação: R$0,00</h3>
+                    <div class="informacao">
+                        <p>Data Compra:</p>
+                        <P>00/00/0000</P>
+                    </div>
 
-                <a class="link-pay" href="../pages/pagConcluido.html"><p>Pagamento completado <i class="bi bi-arrow-right"></i></p></a>
+                    <div class="informacao">
+                        <P>Valor Compra:</P>
+                        <P>R$00,00</P>
+                    </div>
+                </div>
+
+                 <div class="container-botao">
+                            <a href="../index.html"><button type="submit" class="button-form">
+                                Página Inicial
+                            </button></a>
+                </div>
+
             </div>
         </section>
     </main>
