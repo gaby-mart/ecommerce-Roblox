@@ -27,8 +27,8 @@
                 </form>
             </div>
             <div class="buttonsHeader">
-                <a href="./pages/cart.html"><button class="buttonsMenu"><i class="bi bi-cart"></i></button></a>
-                <a href="./pages/login.html"><button class="buttonsMenu">Login</button></a>
+                <a href="../pages/cart.html"><button class="buttonsMenu"><i class="bi bi-cart"></i></button></a>
+                <a href="../pages/login.html"><button class="buttonsMenu">Login</button></a>
             </div>
         </nav>
         <div class="categoriaMenu">
@@ -64,14 +64,51 @@
             </div>
     </header>
 
-    <main>
+    <main class="main-view-product">
 
-    <section class="container-view-product">
-        <article class="card-view-product">
+    <!-- Card da Esquerda -->
+<section class="container-view-product">
+        <article class="container-product">
 
-            <div class="img-product-view" id="img-product-view">
-                <img src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg" alt="Imagem do produto" class="img-product">
+                <div class="galeria-produto">
+
+            <img
+                id="imagemPrincipal"
+                src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg"
+                class="imagem-principal"
+                alt="Imagem demonstrativa do produto escolhido"
+            >
+
+            <a><p class="texto-imagem">
+                Clique para ver a imagem completa
+            </p></a>
+
+            <div class="miniaturas">
+
+                <img
+                    src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg"
+                    onclick="trocarImagem(this)"
+                    class="miniatura ativa"
+                     alt="Imagem demonstrativa do produto escolhido"
+                >
+
+                <img
+                    src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg"
+                    onclick="trocarImagem(this)"
+                    class="miniatura"
+                     alt="Imagem demonstrativa do produto escolhido"
+                >
+
+                <img
+                    src="https://images.metroimg.com/cd17ae79-placa-inustica-roblox.jpg"
+                    onclick="trocarImagem(this)"
+                    class="miniatura"
+                     alt="Imagem demonstrativa do produto escolhido"
+                >
+
             </div>
+
+        </div>
 
             <div class="descrition-product">
                 <h1>Placa de Protesto Oficial</h1>
@@ -105,13 +142,37 @@
                         <h2>Marca:</h2>
                         <p>Revolução Robloxiana</p>
                     </div>
+                    <hr class="linha-divisoria">
+                </div>
 
+                <div class="sobre-product">
+                    <h2>Sobre o produto:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
         </article>
+
+    <!--Card Direita-->
+    <section class="container-buy-product">
+        <div class="card-buy-product">
+            <div>
+                <h2>R$00,00</h2>
+                <P>Em até 12x sem juros</P>
+                <hr class="linha-divisoria">
+            </div>
+            
+
+
+            <div class="cantainer-btn-view">
+                <a href="./pagamento.html"><button class="button-buy">Comprar</button></a>
+                <a href="./cart.html"><button class="button-buy">Adicionar ao carrinho</button></a>
+             </div>
+        </div>
     </section>
+</section>
 
     </main>
+    <script src="../js/viewProduct.js"></script>
     <script src="../js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
