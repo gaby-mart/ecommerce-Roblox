@@ -1488,6 +1488,7 @@ a .texto-imagem:hover{
 /*Carrossel Produtos Semelhantes*/
 
 .container-carrossel-more-product{
+    margin-top:2rem;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -1495,9 +1496,8 @@ a .texto-imagem:hover{
 }
 
 .container-carrossel-more-product h3{
-    text-align: left;
-    margin-left: 2rem;
-    font-size: 25px;
+    color: var(--cor-principal);
+    text-align: center;
     font-weight: bold;
 }
 
@@ -1574,4 +1574,52 @@ a .texto-imagem:hover{
 .card-more-product{
     min-width: 200px;
     flex-shrink: 0;
+}
+
+/*Comentarios*/
+.container-comentario .comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-comentarios{
+    margin: 2rem;
+    max-width: 60%;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.user-informations{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.img-users{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-informations p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-users{
+    max-width: 90px;
+}
+
+.comentarios h2{
+    color: var(--cor-principal);
+    text-align: center;
+    font-weight: bold;
+    font-size:28px;
 }
